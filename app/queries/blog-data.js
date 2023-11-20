@@ -93,7 +93,7 @@ export const getPage = async () => {
           staticPage(slug: "about") {
             title
             content {
-              markdown
+              html
             }
           }
           title
