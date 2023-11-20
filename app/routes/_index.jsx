@@ -1,22 +1,35 @@
 import { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
 
+import blog from '../../public/blog.jpeg';
+
 export const meta = () => {
   return [
-    { title: "RemixNode" },
+    { title: "RemixNode - Home" },
     { name: "description", content: "A Blog Frint-End with Remix Framework and Headless Hashnode!" },
   ];
 };
 
 export default function Index() {
   return (
-    <div className="mx-auto mt-16 max-w-7xl text-center">
-    <Link
-      to="/posts"
-      className="text-xl text-blue-600 underline"
-    >
-      Blog Posts
-    </Link>
+    <div className="flex relative flex-col justify-center items-center h-screen">
+      <img
+        className="w-full h-screen bg-center bg-cover blur-sm"
+        alt="blog" 
+        src={blog} />
+        <div className="absolute p-2 flex flex-col justify-center items-center z-10 bg-teal-50 lg:w-2/5 h-1/4 rounded-md">
+          <div className="flex pb-5 mb-5 text-5xl text-teal-800">
+            <p>RemixNode Blog</p>
+          </div>
+          <div>
+            <Link
+              to="/posts"
+              className="bg-teal-700 text-white hover:bg-teal-900 p-3 rounded-sm text-lg text mr-2"
+            >
+              TAKE ME TO THE POSTS
+            </Link>
+          </div>
+			</div>
   </div>
   );
 }

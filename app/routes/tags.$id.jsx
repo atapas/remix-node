@@ -15,15 +15,20 @@ export default function PostByTag() {
   const foundTag = tags.find((tag) => tag.id === id);
  
   return (
-    <>
-      <div>
-        <p>
+    <div className="flex flex-col">
+      <div className="flex pt-4 pl-4 text-2xl">
+        <p className="mr-2">
           {posts.length} posts found for the tag <strong>{foundTag.name}</strong>
         </p>   
-        <span>|</span>
-        <Link to="/posts">See all the posts</Link>
+        <span className="mr-2">|</span>
+        <Link 
+          className="underline"
+          to="/posts"
+          >
+            See all the posts
+          </Link>
       </div>
       <PostList posts={posts} />
-    </>
+    </div>
   );
 }

@@ -2,9 +2,9 @@ import Navbar from './Navbar';
     
 export default function Layout({ children }) {
     return (
-        <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
+        <div>
             <Navbar />
-            <div className="container">
+            <div>
                 {children}
             </div>
         </div>
