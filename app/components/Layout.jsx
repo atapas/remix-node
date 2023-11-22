@@ -1,12 +1,14 @@
-import Navbar from './Navbar';
+import Header from './Header';
+import Footer from './Footer';
     
 export default function Layout({ children }) {
     return (
-        <div>
-            <Navbar />
-            <div>
+        <div className="flex flex-col min-h-screen">
+            <Header />
+            <main>
                 {children}
-            </div>
+            </main>
+            <Footer />
         </div>
     );
 }
