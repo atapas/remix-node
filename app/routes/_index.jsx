@@ -18,13 +18,13 @@ export default function Index() {
         alt="blog" 
         src={blog} />
         <div className="absolute p-2 flex flex-col justify-center items-center z-10 bg-teal-50 lg:w-2/5 h-1/4 rounded-md">
-          <div className="flex pb-5 mb-5 text-5xl text-teal-800">
+          <div className="flex pb-5 mb-5 text-5xl text-back">
             <p>RemixNode Blog</p>
           </div>
           <div>
             <Link
               to="/posts"
-              className="bg-teal-700 text-white hover:bg-teal-900 p-3 rounded-sm text-lg text mr-2"
+              className="bg-black text-white hover:bg-black/90 p-3 rounded-sm text-lg text mr-2"
             >
               TAKE ME TO THE POSTS
             </Link>

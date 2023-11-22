@@ -1,5 +1,6 @@
 import { Link } from "@remix-run/react";
 import { PostCard } from ".";
+import { getFormattedDate } from "../utils";
 
 export default function PostList({ posts }) {
   const firstPost = posts[0].node;
@@ -11,7 +12,7 @@ export default function PostList({ posts }) {
         <Link to={`/posts/${firstPost.slug}`} >
           <article class="mt-4">
             <h3 class="text-xl font-semibold">{firstPost.title}</h3>
-            <p class="text-gray-500">Posted on {firstPost.publishedAt}</p>
+            <p class="text-gray-500">Posted on {getFormattedDate(firstPost.publishedAt)}</p>
             <img
               alt="Cover image"
               class="mt-4 object-cover rounded-md xs:w-full sm:w-full md:w-2/3 lg:w-2/3 xl:w-1/2 2xl:w-1/3"

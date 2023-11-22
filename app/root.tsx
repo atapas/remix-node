@@ -10,10 +10,13 @@ import {
 } from "@remix-run/react";
 
 import stylesheet from "~/tailwind.css";
+import styles from "~/styles/global.css";
+
 import {Layout, TailwindIndicator} from './components';
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
+  { rel: "stylesheet", href: styles },
 ];
 
 export default function App() {

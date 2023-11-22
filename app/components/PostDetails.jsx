@@ -13,7 +13,7 @@ export default function PostCard({ post }) {
         ))
       }
       </div>
-      <div dangerouslySetInnerHTML={{ __html: post.content.html }} />
+      <div className="post-details" dangerouslySetInnerHTML={{ __html: post.content.html }} />
     </article>
   );
 }

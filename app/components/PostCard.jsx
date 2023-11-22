@@ -1,4 +1,5 @@
 import { Link } from "@remix-run/react";
+import { getFormattedDate } from "../utils";
 
 export default function PostCard({ post }) {
   return (
@@ -10,7 +11,7 @@ export default function PostCard({ post }) {
           src={post.coverImage.url}
         />
         <h3 className="text-xl font-semibold p-4">{post.title}</h3>
-        <p className="text-gray-500 p-4">Posted on {post.publishedAt}</p>
+        <p className="text-gray-500 p-4">Posted on {getFormattedDate(post.publishedAt)}</p>
         <p className="mt-2 text-gray-700 p-4">
           {post.brief}
         </p>
