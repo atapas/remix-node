@@ -1,34 +1,38 @@
-# Welcome to Remix!
+# remix-node
+The `remix-node` is a project to build a custom blog UI using [Headless Hashnode](https://hashnode.com/headless) and [Remix framework](https://remix.run/).
 
-- [Remix Docs](https://remix.run/docs)
+## 🔥 See Demo
+You can see the demo of the working app from here:
 
-## Development
+> [The RemixNode Blog Demo](https://remixnode.vercel.app/)
 
-From your terminal:
+## 🏃 Run It Locally
+You can fork the repository and run the application locally using the following steps:
+- Install dependencies using `npm install` / `pnpm install` / `yarn` command.
+- Start the development server with `npm run dev` / `pnpm dev` / `yarn dev`.
+- By default, the app will run on the [http://localhost:3000/](http://localhost:3000/).
 
-```sh
-npm run dev
-```
+## 🍔 Tech Stack
+- Remix Framework as a front-end web framework.
+- Tailwind CSS for styling.
+- Headless Hashnode as the CMS for Blogging.
+- GraphQL client.
+- Vercel for hosting (with automatic build & deployment).
 
-This starts your app in development mode, rebuilding assets on file changes.
+## 🫶 Support
+Liked it? You can show your support with a STAR(⭐).
 
-## Deployment
+### Many Thanks to all the `Stargazers` who has supported this project with stars(⭐)
 
-First, build your app for production:
+[![Thanks to all stargazers](https://git-lister.onrender.com/api/stars/atapas/remix-node?limit=15)](https://github.com/atapas/remix-node/stargazers)
 
-```sh
-npm run build
-```
+### Sponsor My Work
 
-Then run the app in production mode:
+I am an independent educator who creates meaningful projects to teach programming. You can support me further by [sponsoring me on GitHub](https://github.com/sponsors/atapas).
 
-```sh
-npm start
-```
 
+## 🟢 Deploy
 Now you'll need to pick a host to deploy it to.
-
-### DIY
 
 If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
 
